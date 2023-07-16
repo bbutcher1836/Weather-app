@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
 <html>
 <head>
   <title>Weather Dashboard</title>
@@ -15,17 +15,35 @@
   <main>
     <section id="current-weather">
       <h2>Current Weather</h2>
-      <div id="current-weather-info"></div>
+      <div id="current-weather-info">
+        <h3 id="cityName"></h3>
+        <img id="currentIcon" src="" alt="Weather Icon">
+        <p id="cityTemp"></p>
+        <p id="cityWind"></p>
+        <p id="cityHumidity"></p>
+      </div>
     </section>
     <section id="forecast">
       <h2>5-Day Forecast</h2>
-      <div id="forecast-info"></div>
+      <div id="forecast-info">
+        <div id="day1">
+          <h3 id="day1Date"></h3>
+          <img id="day1icon" src="" alt="Weather Icon">
+          <p id="day1Temp"></p>
+          <p id="day1Wind"></p>
+          <p id="day1Humid"></p>
+        </div>
+        <div id="day2">
+        
+        </div>
+      </div>
     </section>
     <section id="search-history">
       <h2>Search History</h2>
       <ul id="history-list"></ul>
     </section>
   </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
